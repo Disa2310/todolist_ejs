@@ -1,0 +1,30 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td><input type="submit" name="save"></td>
+        </tr>
+        
+    </table>
+</form>
+<table border="">
+    
+    <th>Name</th>
+    
+    <th>Delete</th>
+    <th>Update</th>
+    <% result.forEach(function(item){ %>
+        <tr>
+            
+            <td><%= item.name %></td>
+            
+            <td><a href="delete/<%=item.id%>">Delete</a></td>
+            <td><a href="update/<%=item.id%>">Update</a></td>
+        </tr>
+    <% });%>
+</table>

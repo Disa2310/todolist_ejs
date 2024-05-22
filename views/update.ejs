@@ -1,0 +1,18 @@
+<% result.forEach(function(item){%>
+
+    <form method="post">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="rollno" value="<%= item.name %>"></td>
+            </tr>
+            
+            
+            <tr>
+                <td></td>
+                <td><input type="submit" value="update" name="update"></td>
+            </tr>
+            
+        </table>
+    </form>
+<% });%>
